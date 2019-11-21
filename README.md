@@ -1,3 +1,16 @@
+# Create website using angular
+
+## part 2.
+
+    1. Add Routing for pages (components)
+    2. Separate static data from Template
+    3. Move things to a configuaration file
+    4. Add more micro components
+
+## part 1.
+
+    1. Concvert HTML to Angular components
+
 # Website
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.16.
