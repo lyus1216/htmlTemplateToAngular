@@ -17,18 +17,11 @@
   ></div>
 </div>
 
-<div id="wrapper">
-  <app-header></app-header>
-  <!--Main Content Area-->
-  <main id="content">
-    <app-introduction></app-introduction>
-    <app-gallery></app-gallery>
-    <app-content></app-content>
-    <app-testimonials></app-testimonials>
-    <app-clients></app-clients>
-    <app-pricing></app-pricing>
+<!--Main Content Area-->
+<main id="content">
+  <app-navigation></app-navigation>
+  <router-outlet></router-outlet>
 
-    <app-footer></app-footer>
-  </main>
-  <!--End Main Content Area-->
-</div>
+  <app-footer></app-footer>
+</main>
+<!--End Main Content Area-->
