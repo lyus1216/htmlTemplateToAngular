@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-navigation',
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.css']
+  selector: "app-navigation",
+  templateUrl: "./navigation.component.html",
+  styleUrls: ["./navigation.component.css"]
 })
 export class NavigationComponent implements OnInit {
+  activetab = "home";
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  getActiveTab(tabname: string): void {
+    this.activetab = tabname;
   }
-
 }
