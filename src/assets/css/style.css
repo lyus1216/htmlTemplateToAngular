@@ -700,6 +700,7 @@ nav#nav-mobile a:hover {
 
 .social-icons {
   display: inline-block;
+  text-align: right;
   list-style: none;
 }
 

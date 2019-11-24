@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { ConfigService } from "../config.service";
 
 @Component({
-  selector: 'app-content',
-  templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  selector: "app-content",
+  templateUrl: "./content.component.html",
+  styleUrls: ["./content.component.css"]
 })
 export class ContentComponent implements OnInit {
-
-  constructor() { }
+  service = {};
+  constructor(private config: ConfigService) {}
 
   ngOnInit() {
+    this.service = this.getService();
   }
 
+  getService() {
+    return this.config.getConfig().service;
+  }
 }
