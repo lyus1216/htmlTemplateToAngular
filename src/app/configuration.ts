@@ -172,11 +172,41 @@ export const configuration = {
     developer: "AdMISTER STUDIO",
     developerlink: "http://admister.im"
   },
-  social: [
-    { taget: "", title = "", username = "", icon = "" },
-    { taget: "", title = "", username = "", icon = "" },
-    { taget: "", title = "", username = "", icon = "" },
-    { taget: "", title = "", username = "", icon = "" },
-    { taget: "", title = "", username = "", icon = "" }
+  socialsites: [
+    {
+      taget: "_blank",
+      title: "Facebook",
+      username: "lyus1216",
+      icon: "facebook",
+      link:"https://www.facebook.com/"
+    },
+    {
+      taget: "_blank",
+      title: "Google+",
+      username: "lyus1216",
+      icon: "google-plus",
+      link:"http://google.com/+"
+    },
+    {
+      taget: "_blank",
+      title: "Twitter",
+      username: "lyus1216",
+      icon: "twitter",
+      link:"http://www.twitter.com/"
+    },
+    {
+      taget: "_blank",
+      title: "Instagram",
+      username: "lyus1216",
+      icon: "instagram",
+      link:"http://www.instagram.com/"
+    },
+    {
+      taget: "_blank",
+      title: "behance",
+      username: "",
+      icon: "behance",
+      link:"http://www.behance.net"
+    }
   ]
 };
