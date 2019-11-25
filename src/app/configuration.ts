@@ -178,35 +178,129 @@ export const configuration = {
       title: "Facebook",
       username: "lyus1216",
       icon: "facebook",
-      link:"https://www.facebook.com/"
+      link: "https://www.facebook.com/"
     },
     {
       taget: "_blank",
       title: "Google+",
       username: "lyus1216",
       icon: "google-plus",
-      link:"http://google.com/+"
+      link: "http://google.com/+"
     },
     {
       taget: "_blank",
       title: "Twitter",
       username: "lyus1216",
       icon: "twitter",
-      link:"http://www.twitter.com/"
+      link: "http://www.twitter.com/"
     },
     {
       taget: "_blank",
       title: "Instagram",
       username: "lyus1216",
       icon: "instagram",
-      link:"http://www.instagram.com/"
+      link: "http://www.instagram.com/"
     },
     {
       taget: "_blank",
       title: "behance",
       username: "",
       icon: "behance",
-      link:"http://www.behance.net"
+      link: "http://www.behance.net"
     }
-  ]
+  ],
+  blog: {
+    tagline: "MY BLOG",
+    title: "Thoughts become things..",
+    posts: [
+      {
+        id: 1,
+        title: "The first Article",
+        author: "AD",
+        image: "gallery-image-1.jpg",
+        publishdate: "2012-04-23T18:25:43.511Z",
+        excert: "This is the summary of the article..."
+      },
+      {
+        id: 2,
+        title: "The second Article",
+        author: "AD",
+        image: "gallery-image-2.jpg",
+        publishdate: "2015-04-23T18:25:43.511Z",
+        excert: "This is the summary of the article..."
+      },
+      {
+        id: 3,
+        title: "The third Article",
+        author: "AD",
+        image: "gallery-image-3.jpg",
+        publishdate: "2015-04-23T18:25:43.511Z",
+        excert: "This is the summary of the article..."
+      },
+      {
+        id: 4,
+        title: "The fourth Article",
+        author: "AD",
+        image: "gallery-image-4.jpg",
+        publishdate: "2015-04-23T18:25:43.511Z",
+        excert: "This is the summary of the article..."
+      },
+      {
+        id: 5,
+        title: "The fifth Article",
+        author: "AD",
+        image: "gallery-image-5.jpg",
+        publishdate: "2015-04-23T18:25:43.511Z",
+        excert: "This is the summary of the article..."
+      },
+      {
+        id: 6,
+        title: "The sixth Article",
+        author: "AD",
+        image: "gallery-image-6.jpg",
+        publishdate: "2015-04-23T18:25:43.511Z",
+        excert: "This is the summary of the article..."
+      },
+      {
+        id: 7,
+        title: "The seven Article",
+        author: "AD",
+        image: "gallery-image-1.jpg",
+        publishdate: "2015-04-23T18:25:43.511Z",
+        excert: "This is the summary of the article..."
+      },
+      {
+        id: 8,
+        title: "The eight Article",
+        author: "AD",
+        image: "gallery-image-3.jpg",
+        publishdate: "2015-04-23T18:25:43.511Z",
+        excert: "This is the summary of the article..."
+      },
+      {
+        id: 9,
+        title: "The nine Article",
+        author: "AD",
+        image: "gallery-image-5.jpg",
+        publishdate: "2015-04-23T18:25:43.511Z",
+        excert: "This is the summary of the article..."
+      },
+      {
+        id: 10,
+        title: "The ten Article",
+        author: "AD",
+        image: "gallery-image-2.jpg",
+        publishdate: "2015-04-23T18:25:43.511Z",
+        excert: "This is the summary of the article..."
+      },
+      {
+        id: 11,
+        title: "The elevn Article",
+        author: "AD",
+        image: "gallery-image-4.jpg",
+        publishdate: "2015-04-23T18:25:43.511Z",
+        excert: "This is the summary of the article..."
+      }
+    ]
+  }
 };

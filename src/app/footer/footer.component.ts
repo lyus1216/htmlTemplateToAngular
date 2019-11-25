@@ -12,7 +12,6 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
     this.footer = this.getFooter();
-    console.log(this.footer);
   }
 
   getFooter() {

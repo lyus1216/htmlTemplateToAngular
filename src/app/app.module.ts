@@ -16,6 +16,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { ConfigService } from "./config.service";
 import { BlogComponent } from './blog/blog.component';
 import { ArticleComponent } from './article/article.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ArticleComponent } from './article/article.component';
     SocialComponent,
     HeaderComponent,
     BlogComponent,
-    ArticleComponent
+    ArticleComponent,
+    PostComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],
