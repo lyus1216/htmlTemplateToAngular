@@ -14,6 +14,8 @@ import { SocialComponent } from "./social/social.component";
 import { HeaderComponent } from "./header/header.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { ConfigService } from "./config.service";
+import { BlogComponent } from './blog/blog.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ConfigService } from "./config.service";
     FooterComponent,
     NavigationComponent,
     SocialComponent,
-    HeaderComponent
+    HeaderComponent,
+    BlogComponent,
+    ArticleComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],
