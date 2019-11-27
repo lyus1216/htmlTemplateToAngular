@@ -1,0 +1,9 @@
+<ul class ='pagination'>
+  <li [class.disable] = 'pager.currentPage === 1'><a (click)="setCurrentPage(1)">First</a></li>
+  <li [class.disable] = 'pager.currentPage === 1'><a (click)="setCurrentPage(pager.currentPage - 1)">Prev</a></li>
+  <li *ngFor="let page of pager.pages" [class.active] = 'pager.currentPage === page'>
+    <a (click)="setCurrentPage(page)">{{ page }}</a>
+  </li>
+  <li [class.disable] = 'pager.currentPage === pager.endPage'><a (click)="setCurrentPage(pager.currentPage + 1)">Next</a></li>
+  <li [class.disable] = 'pager.currentPage === pager.endPage'><a (click)="setCurrentPage(pager.endPage)">Last</a></li>
+</ul>
