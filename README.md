@@ -1,4 +1,19 @@
-# Create website using angular
+# Create your first website using angular 6
+
+## part 5.
+    1. Add a 404 component for pages not found 
+    2. Add pagination to Blog section
+
+
+## part 4.
+    1. Add a blog section in our website
+
+
+## part 3.
+    1. Move Data to Configuration file for all components
+    2. Add more components as needed
+
+
 
 ## part 2.
 
