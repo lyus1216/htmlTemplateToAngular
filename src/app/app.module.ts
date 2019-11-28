@@ -14,12 +14,16 @@ import { SocialComponent } from "./social/social.component";
 import { HeaderComponent } from "./header/header.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { ConfigService } from "./config.service";
-import { BlogComponent } from './blog/blog.component';
-import { ArticleComponent } from './article/article.component';
-import { PostComponent } from './post/post.component';
-import { NotfoundComponent } from './notfound/notfound.component';
-import { PaginationComponent } from './pagination/pagination.component';
-import { PagerService } from './pager.service';
+import { BlogComponent } from "./blog/blog.component";
+import { ArticleComponent } from "./article/article.component";
+import { PostComponent } from "./post/post.component";
+import { NotfoundComponent } from "./notfound/notfound.component";
+import { PaginationComponent } from "./pagination/pagination.component";
+import { PagerService } from "./pager.service";
+import { LoginComponent } from "./login/login.component";
+import { SignupComponent } from "./signup/signup.component";
+import { ContactusComponent } from "./contactus/contactus.component";
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -38,9 +42,12 @@ import { PagerService } from './pager.service';
     ArticleComponent,
     PostComponent,
     NotfoundComponent,
-    PaginationComponent
+    PaginationComponent,
+    LoginComponent,
+    SignupComponent,
+    ContactusComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [ConfigService, PagerService],
   bootstrap: [AppComponent]
 })

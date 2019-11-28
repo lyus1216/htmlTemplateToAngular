@@ -1,5 +1,10 @@
 # Create your first website using angular 6
 
+## part 6.
+    1. Create a contact form section
+    2. create login and signup components
+    3. connect to backend
+
 ## part 5.
     1. Add a 404 component for pages not found 
     2. Add pagination to Blog section
