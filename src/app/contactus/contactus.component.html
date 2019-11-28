@@ -7,18 +7,18 @@
     
                     <h4 class="text-center"><i class="ion-email"></i> Contact Us</h4>
     
-                    <form >
+                    <form [formGroup]="contactusForm" (ngSubmit)="sentmessage(contactusForm.value)">
                         <div class="form-group">
-                            <input type="text" class="form-control form-names input-lg" name="firstName" placeholder="First Name">
-                            <input type="text" class="form-control form-names input-lg" name="lastName" placeholder="Last Name">
+                            <input type="text" class="form-control form-names input-lg" name="firstName" placeholder="First Name" formControlName="firstName">
+                            <input type="text" class="form-control form-names input-lg" name="lastName" placeholder="Last Name" formControlName="lastName">
                             <span class="ion-person form-control-icon"></span>
                         </div>
                         <div class="form-group">
-                                <input type="text" class="form-control input-lg" name="email" placeholder="Email">
+                                <input type="text" class="form-control input-lg" name="email" placeholder="Email" formControlName="email">
                                 <span class="ion-at form-control-icon"></span>
                             </div>
                         <div class="form-group">
-                            <textarea row="10" cols="20" class="form-control input-lg" name="message" placeholder="message"></textarea>
+                            <textarea row="10" cols="20" class="form-control input-lg" name="message" placeholder="message" formControlName="message"></textarea>
                             <span class="ion-key form-control-icon"></span>
                         </div>
     

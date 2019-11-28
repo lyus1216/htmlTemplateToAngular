@@ -7,18 +7,18 @@
     
                     <h4 class="text-center"><i class="ion-person-add"></i> Sign up</h4>
     
-                    <form >
+                    <form [formGroup]="signupForm" (ngSubmit)="signup(signupForm.value)">
                         <div class="form-group">
-                            <input type="text" class="form-control form-names input-lg" name="firstName" placeholder="First Name">
-                            <input type="text" class="form-control form-names input-lg" name="lastName" placeholder="Last Name">
+                            <input type="text" class="form-control form-names input-lg" name="firstName" placeholder="First Name" formControlName="firstName">
+                            <input type="text" class="form-control form-names input-lg" name="lastName" placeholder="Last Name" formControlName="lastName">
                             <span class="ion-person form-control-icon"></span>
                         </div>
                         <div class="form-group">
-                                <input type="text" class="form-control input-lg" name="email" placeholder="Email">
+                                <input type="text" class="form-control input-lg" name="email" placeholder="Email" formControlName="email">
                                 <span class="ion-at form-control-icon"></span>
                             </div>
                         <div class="form-group">
-                            <input type="password" class="form-control input-lg" name="password" placeholder="password">
+                            <input type="password" class="form-control input-lg" name="password" placeholder="password" formControlName="password">
                             <span class="ion-key form-control-icon"></span>
                         </div>
     
