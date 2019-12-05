@@ -24,6 +24,9 @@ import { LoginComponent } from "./login/login.component";
 import { SignupComponent } from "./signup/signup.component";
 import { ContactusComponent } from "./contactus/contactus.component";
 import { ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
+import { InMemoryDataService } from "./in-memory-data.service";
 
 @NgModule({
   declarations: [
@@ -47,7 +50,15 @@ import { ReactiveFormsModule } from "@angular/forms";
     SignupComponent,
     ContactusComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
+      dataEncapsulation: false
+    })
+  ],
   providers: [ConfigService, PagerService],
   bootstrap: [AppComponent]
 })

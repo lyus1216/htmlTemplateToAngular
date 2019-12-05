@@ -7,7 +7,7 @@
     
                     <h4 class="text-center"><i class="ion-email"></i> Contact Us</h4>
     
-                    <form [formGroup]="contactusForm" (ngSubmit)="sentmessage(contactusForm.value)">
+                    <form [formGroup]="contactusForm" (ngSubmit)="sentMessage(contactusForm.value)">
                         <div class="form-group">
                             <input type="text" class="form-control form-names input-lg" name="firstName" placeholder="First Name" formControlName="firstName">
                             <input type="text" class="form-control form-names input-lg" name="lastName" placeholder="Last Name" formControlName="lastName">
