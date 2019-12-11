@@ -31,66 +31,69 @@
           <li>
             <a
               routerLink="/Home"
-              (click)="getActiveTab('home')"
-              [class.active]="activetab === 'home'"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >Home</a
             >
           </li>
           <li>
             <a
               routerLink="/About"
-              (click)="getActiveTab('about')"
-              [class.active]="activetab === 'about'"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >About</a
             >
           </li>
           <li>
             <a
               routerLink="/Gallery"
-              (click)="getActiveTab('gallery')"
-              [class.active]="activetab === 'gallery'"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >Gallery</a
             >
           </li>
           <li>
             <a
               routerLink="/Services"
-              (click)="getActiveTab('service')"
-              [class.active]="activetab === 'service'"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >Services</a
             >
           </li>
           <li>
             <a
               routerLink="/Testimonials"
-              (click)="getActiveTab('testimonials')"
-              [class.active]="activetab === 'testimonials'"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >Testimonials</a
             >
           </li>
           <li>
             <a
               routerLink="/Clients"
-              (click)="getActiveTab('clients')"
-              [class.active]="activetab === 'clients'"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >Clients</a
             >
           </li>
           <li>
             <a
               routerLink="/Pricing"
-              (click)="getActiveTab('pricing')"
-              [class.active]="activetab === 'pricing'"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >Pricing</a
             >
           </li>
           <li>
             <a
               routerLink="/Blog"
-              (click)="getActiveTab('blog')"
-              [class.active]="activetab === 'blog'"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >Blog</a
             >
+          </li>
+          <li>
+            <a (click)="logout()">Logout</a>
           </li>
         </ul>
       </nav>

@@ -8,6 +8,7 @@ import {
 } from "@angular/forms";
 import { formattedError } from "@angular/compiler";
 import { AuthenticationService } from "../authentication.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-signup",
@@ -16,7 +17,11 @@ import { AuthenticationService } from "../authentication.service";
 })
 export class SignupComponent implements OnInit {
   signupForm: FormGroup;
-  constructor(private fb: FormBuilder, private auth: AuthenticationService) {}
+  constructor(
+    private fb: FormBuilder,
+    private auth: AuthenticationService,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.signupForm = this.fb.group({
@@ -29,7 +34,8 @@ export class SignupComponent implements OnInit {
 
   signup(formData: NgForm) {
     this.auth.signup(formData).subscribe(user => {
-      console.log("back" + user);
+      console.log(`added user ${JSON.stringify(user)}`);
+      this.router.navigate(["Login"]);
     });
   }
 }

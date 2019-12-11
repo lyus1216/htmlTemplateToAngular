@@ -21,11 +21,24 @@ export class AuthenticationService {
   }
 
   signup(formData: NgForm) {
-    return this.http.post(this.apiUrl, formData).pipe(
+    return this.http.post(`${this.apiUrl}/signup`, formData).pipe(
       tap(user => {
         console.log(user);
       }),
       catchError(this.handleError("signup", []))
     );
+  }
+
+  login(formData: NgForm) {
+    return this.http.post(`${this.apiUrl}/login`, formData).pipe(
+      tap(user => {
+        console.log(user);
+      }),
+      catchError(this.handleError("login", []))
+    );
+  }
+
+  logout() {
+    console.log("Log out!");
   }
 }
